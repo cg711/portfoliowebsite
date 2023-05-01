@@ -51,6 +51,7 @@ export default function Contact() {
                                 mt-3
                                 mb-3
                                 hover:shadow-2xl
+                                max-w-lg
                             "
                         placeholder="Name"/>
 
@@ -77,6 +78,7 @@ export default function Contact() {
                                 mt-3
                                 mb-3
                                 hover:shadow-2xl
+                                max-w-lg
                             "
                     placeholder="youremailhere@email.com"/>
                     <label className="text-xl" htmlFor='textmessage'>

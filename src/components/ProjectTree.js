@@ -5,7 +5,7 @@ export default function ProjectTree(props) {
     const childArray = Children.toArray(props.children);
     return (
         <div className="relative border-l border-gray-200 flex flex-col items-center mt-4">
-            <h1 className="text-4xl mt-16" id="experience">Projects</h1>
+            <h1 className="text-4xl mt-16" id="projects">Projects</h1>
             <p className="mt-2">(Click for more info, or 
                 <button type="button" onClick={() => {
                     let rand = Math.floor(Math.random() * childArray.length) + 1;

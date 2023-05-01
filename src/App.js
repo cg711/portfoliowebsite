@@ -7,6 +7,7 @@ import {motion} from 'framer-motion';
 import { Analytics } from '@vercel/analytics/react';
 import ProjectTree from './components/ProjectTree';
 import Project from './components/Project';
+import Footer from './components/Footer';
 
 export default function App() {
   return (
@@ -99,9 +100,9 @@ export default function App() {
         </Project>
       </ProjectTree>
       {/* <h1 id="projects">PROJECTS</h1> */}
-      <h1 id="contact" className="hidden">contact</h1>
       <Contact/>
-      <Analytics/>
+      {/* <Analytics/> */}
+      <Footer/>
     </div>
   );
 }

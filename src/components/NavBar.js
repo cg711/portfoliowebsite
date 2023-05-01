@@ -1,5 +1,6 @@
 // import "./NavBar.css";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function NavBar() {
   const [burgerToggle, setToggle] = useState(false);
@@ -12,9 +13,9 @@ export default function NavBar() {
     <nav className="bg-white shadow-xl">
       <div className="max-w-6xl mx-auto px-8">
         <div className="flex justify-between space-x-4 items-center hidden md:flex">
-          <a href="#experience" className="py-5">Experience</a>
-          <a href="#projects" className="py-5">Projects</a>
-          <a href="#contact" className="py-5">Contact</a>
+          <motion.a whileHover={{scale: 1.1}} href="#experience" className="py-5">Experience</motion.a>
+          <motion.a whileHover={{scale: 1.1}} href="#projects" className="py-5">Projects</motion.a>
+          <motion.a whileHover={{scale: 1.1}} href="#contact" className="py-5">Contact</motion.a>
         </div>
         <div className="md:hidden flex items-center py-5 justify-end">
             {/* mobile button here */}
@@ -32,9 +33,9 @@ export default function NavBar() {
         </div>
         <div className="mobilemenu hidden flex flex-col items-center md:hidden">
           {/* hover:bg-gray-200 */}
-          <a href="#experience" className="py-2">Experience</a>
-          <a href="#projects" className="py-2">Projects</a>
-          <a href="#contact" className="py-2">Contact</a>
+          <motion.a whileHover={{scale: 1.1}} href="#experience" className="py-2">Experience</motion.a>
+          <motion.a whileHover={{scale: 1.1}} href="#projects" className="py-2">Projects</motion.a>
+          <motion.a whileHover={{scale: 1.1}} href="#contact" className="py-2">Contact</motion.a>
         </div>
       </div> 
     </nav>
