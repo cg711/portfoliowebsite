@@ -38,7 +38,7 @@ export default function App() {
              connected to the Pi. Overall, it was a very fun project, and you can see the whole (admittedly rough) setup below!
           </p>
         </Project>
-        <Project projName="Healing Haiti" id="proj3" img='/healinghaiti.png' techs="N/A" int="haiti.jpg">
+        <Project projName="Healing Haiti" id="proj3" img='/healinghaiti.png' techs="N/A" int="/haiti.JPG">
           <p>
             I went to Haiti in 2018 with an organization named Healing Haiti to volunteer. 
             We did work such as water delivery and community building that was very rewarding.
