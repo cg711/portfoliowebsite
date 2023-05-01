@@ -50,6 +50,7 @@ export default function Contact() {
                                 focus:ring-opacity-50
                                 mt-3
                                 mb-3
+                                hover:shadow-2xl
                             "
                         placeholder="Name"/>
 
@@ -75,6 +76,7 @@ export default function Contact() {
                                 focus:ring-opacity-50
                                 mt-3
                                 mb-3
+                                hover:shadow-2xl
                             "
                     placeholder="youremailhere@email.com"/>
                     <label className="text-xl" htmlFor='textmessage'>
@@ -99,6 +101,7 @@ export default function Contact() {
                         focus:ring-indigo-200
                         focus:ring-opacity-50
                         resize-none
+                        hover:shadow-2xl
                     "
                     placeholder="Message here!"
                     rows={15}

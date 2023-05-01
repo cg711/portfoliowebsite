@@ -18,7 +18,7 @@ export default function JobTree(props) {
                             <motion.button whileHover={{scale: 1.1}} className="hover:brightness-125
                             px-6 rounded-2xl shadow-outline
                             bg-gradient-to-br from-green-300 via-blue-500 to-purple-600
-                            mx-10
+                            mx-10 shadow-xl
                             " onClick={() => {
                                 const temp = document.getElementById(`${child.props.id}`);
                                 temp.classList.toggle("hidden");

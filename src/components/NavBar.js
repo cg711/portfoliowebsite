@@ -9,7 +9,7 @@ export default function NavBar() {
     setToggle(!burgerToggle);
   }
   return (
-    <nav className="bg-gray-100 shadow-xl">
+    <nav className="bg-white shadow-xl">
       <div className="max-w-6xl mx-auto px-8">
         <div className="flex justify-between space-x-4 items-center hidden md:flex">
           <a href="#experience" className="py-5">Experience</a>
