@@ -4,6 +4,7 @@ import Job from './components/Job';
 import Contact from './components/Contact';
 import JobTree from './components/JobTree';
 import {motion} from 'framer-motion';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
       {/* <h1 id="projects">PROJECTS</h1> */}
       <h1 id="contact" className="hidden">contact</h1>
       <Contact/>
+      <Analytics/>
     </div>
   );
 }
