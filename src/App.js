@@ -94,10 +94,22 @@ export default function App() {
           </p>
         </Project>
         <Project projName="Pong Clone" id="proj10" img="/pong.png" techs="Java" int="/ponggame.png">
-          This was just a fun project I made to get better with Java and to start learning game development. It's basically a pong clone,
-          you can have up to two players, and there isn't a score limit. This was a great way to learn how game loops function as well
-          as how JPanel and some other sound libraries work in Java.
+          <p>
+            This was just a fun project I made to get better with Java and to start learning game development. It's basically a pong clone,
+            you can have up to two players, and there isn't a score limit. This was a great way to learn how game loops function as well
+            as how JPanel and some other sound libraries work in Java.
+          </p>
         </Project>
+        <Project projName="Cybot (ISU)" id="proj11" img="/cybot.png" techs="C, MatLab, Microcontrollers, ASM" int="/testfield.jpg">
+          <p>
+            This was a project for my CPrE 288 class at ISU. The end goal was to manually control an iRobot to
+            a desired end location while avoiding any objects that were in the robot's path. For the project, my team and I were
+            not allowed to see the robots location on the field, so to visualize the iRobot's location
+            we created a MatLab GUI to plot objects on the field and the actual iRobot's location. From MatLab, we were
+            also able to send commands to the iRobot for movement. Below is a picture of the field where the iRobot had to manuvere!
+          </p>
+        </Project>
+
       </ProjectTree>
       {/* <h1 id="projects">PROJECTS</h1> */}
       <Contact/>
