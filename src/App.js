@@ -3,20 +3,20 @@ import NavBar from './components/NavBar';
 import Job from './components/Job';
 import Contact from './components/Contact';
 import JobTree from './components/JobTree';
-import {motion} from 'framer-motion';
-import { Analytics } from '@vercel/analytics/react';
 import ProjectTree from './components/ProjectTree';
 import Project from './components/Project';
 import Footer from './components/Footer';
+import { Languages } from './components/Languages';
 
 export default function App() {
   return (
     <div className="font-jose">
       <NavBar/>
       <Hero/>
+      <Languages/>
       <JobTree>
         <Job img="./siback.png" id="job1" companyName="Solar Informatics" jobTitle="Software Engineering Intern" duration="May 2022 - August 2022" location="Minneapolis, Minnesota">
-          <p className="mb-2">During my time at Solar Informatics I developed a lot with <span className='text-green-700 inline'>Springboot</span>, <span className='inline text-blue-400'>MySQL</span>, and other various backend technologies. It was very rewarding to contribute to a company centered around renewable technology! Below is a picture with the Solar Informatics family.</p>
+          <p className="mb-2">During my time at Solar Informatics I developed a lot with Springboot, MySQL, and other various backend technologies. It was very rewarding to contribute to a company centered around renewable technology! Below is a picture with the Solar Informatics family.</p>
           <img src="./solarexpo1.jpg" className="rounded-lg w-96"/>
         </Job>
         <Job img="./leidos.png" id="job2" companyName="Leidos" jobTitle="Software Engineering Intern" duration="May 2023 - August 2023" location="Omaha, Nebraska">
@@ -78,7 +78,7 @@ export default function App() {
             reason I can't get OBS to work properly, so this will have to do for now!
           </p>
         </Project>
-        <Project projName="CSE Club (ISU)" id="proj8" img="/cseclub.png" int="/cseclub.png">
+        <Project projName="CSE Club (ISU)" techs="N/A" id="proj8" img="/cseclub.png" int="/cseclub.png">
           <p>
             The CSE Club at ISU does a lot of different cool things, but probably my favorite has been their Hackathons.
             If you don't know, a Hackathon is a programming competition between anywhere from 5-20 teams, and you compete to
@@ -107,6 +107,12 @@ export default function App() {
             not allowed to see the robots location on the field, so to visualize the iRobot's location
             we created a MatLab GUI to plot objects on the field and the actual iRobot's location. From MatLab, we were
             also able to send commands to the iRobot for movement. Below is a picture of the field where the iRobot had to manuvere!
+          </p>
+        </Project>
+        <Project projName="Worst Location Finder" int="/worstplaces.png" img="/thumbsdown.png" id="proj12" techs="Javascript, React, Tailwindcss, Google Maps API">
+          <p>
+            This is a website that finds the worst rated locations within a 20 mile radius of your current location. "Why would you make this?" I don't know,
+            I thought it was kind of funny. You give it a keyword for the type of place you want to find (i.e. store, gym, etc.) and then it finds it and shoots confetti out.
           </p>
         </Project>
 

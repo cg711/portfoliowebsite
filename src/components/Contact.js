@@ -18,7 +18,7 @@ export default function Contact() {
         <div className="relative
             min-h-screen overflow-hidden
             font-jose
-            mt-16 mb-16
+            mt-16 
             ">
             <div className="
             w-9/12 p-6 m-auto bg-white rounded-md shadow-xl

@@ -13,7 +13,7 @@ export default function ProjectTree(props) {
                     console.log(str);
                     const temp = document.getElementById(str);
                     temp.classList.toggle("hidden");
-                    }} className="h-10 px-5 text-gray-100 bg-indigo-700 rounded-2xl transition-colors duration-150
+                    }} className="h-10 px-5 text-white bg-blue-500 rounded-2xl transition-colors duration-150
                     focus:shadow-outline
                     hover:bg-indigo-800 sm:mt-0 sm:w-auto inline ml-2">
                     Suprise me!
