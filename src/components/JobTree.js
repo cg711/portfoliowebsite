@@ -5,20 +5,21 @@ export default function JobTree(props) {
     const childArray = Children.toArray(props.children);
     return (
         <div className="relative border-l border-gray-200
-        flex flex-col items-center mt-4">
-            <h1 className="text-4xl mt-16" id="experience">Work Experience</h1>
+        flex flex-col items-center mt-4" id="experience">
+            <h1 className="text-4xl mt-16">Work Experience</h1>
             <p>(Click for more info!)</p>
             {Children.map(childArray, child => {
                 return ( 
                     <div>
                         <div className="flex flex-col items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                                <path strokeLinecap="round" s3trokeLinejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
                             </svg>
                             <motion.button whileHover={{scale: 1.1}} className="hover:brightness-125
                             px-6 rounded-2xl shadow-outline
                             bg-gradient-to-br from-green-300 via-blue-500 to-purple-600
                             mx-10 shadow-xl
+                            hover:animate-pulse
                             " onClick={() => {
                                 const temp = document.getElementById(`${child.props.id}`);
                                 temp.classList.toggle("hidden");

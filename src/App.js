@@ -41,9 +41,8 @@ export default function App() {
         </Project>
         <Project projName="Healing Haiti" id="proj3" img='/healinghaiti.png' techs="N/A" int="/haiti.JPG">
           <p>
-            I went to Haiti in 2018 with an organization named Healing Haiti to volunteer. 
-            We did work such as water delivery and community building that was very rewarding.
-            Below is a picture of some friends and I!
+          I have been volunteering with Healing Haiti since 2018, and it has been an incredibly rewarding experience. Over the years, I have witnessed the organization's impact on the lives of those in need and the positive transformation it brings to the local communities.
+          Through Healing Haiti's various initiatives, including education, healthcare, clean water projects, and sustainable development, we have been able to make a real difference in the lives of many individuals.
           </p>
         </Project>
         <Project projName="Microservices Application" id="proj4" img='/microservices.png' techs="Springboot, MySQL, REST, Java, Spring Libraries" int="microservices.jpg">
@@ -85,12 +84,12 @@ export default function App() {
             create the fastest code for 7-10 different tasks. Super fun!
           </p>
         </Project>
-        <Project projName="My Portfolio Website!" id="proj9" img="/port.png" techs="React, Tailwindcss, Framer, Vercel, Three.js, Blender" int="portfolio.png">
+        <Project projName="Portfolio Website" id="proj9" img="/port.png" techs="React, Tailwindcss, Framer.js, Vercel, Three.js, Blender" int="portfolio.png">
           <p>
             This website was fun to create! Although I have created websites with React before, I had never
             integrated them with Tailwind before so this was a great learning opportunity for me. The 3D model of my
-            picture was modeled in Blender, and rendered in the browser with Three.js. Otherwise, with a little help from
-            Framer for animations, everything else is custom.
+            picture was modeled in Blender, and rendered in the browser with Three.js. Otherwise, besides a little help from
+            Framer.js for animations, everything is custom.
           </p>
         </Project>
         <Project projName="Pong Clone" id="proj10" img="/pong.png" techs="Java" int="/ponggame.png">
@@ -115,11 +114,17 @@ export default function App() {
             I thought it was kind of funny. You give it a keyword for the type of place you want to find (i.e. store, gym, etc.) and then it finds it and shoots confetti out.
           </p>
         </Project>
+        <Project projName="Scratch Roulette" int="/roulette.png" img="/scratchroulette.png" id="proj13" techs="React, Tailwindcss, Scratch API">
+          <p>
+            I used Scratch a ton as a kid and I remember all of the awesome and terrible projects people made on the website, so that's why 
+            I decided to make a game out of it!
+            It uses the Scratch API to find a random game which is then served to the user who rates it as either good or bad. 
+            This one's really fun to play around with to see all the weird and entertaining stuff you can dig up on Scratch.
+          </p>
+        </Project>
 
       </ProjectTree>
-      {/* <h1 id="projects">PROJECTS</h1> */}
       <Contact/>
-      {/* <Analytics/> */}
       <Footer/>
     </div>
   );

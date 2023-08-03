@@ -6,7 +6,7 @@ export default function Resume() {
     return (
         <div className="mt-4 mb-4 md:pr-16">
             <button className="
-            h-10 px-5 text-gray-100 bg-indigo-700 rounded-2xl transition-colors duration-150
+            h-10 px-5 text-white bg-indigo-700 rounded-2xl transition-colors duration-150
             focus:shadow-outline
             hover:bg-indigo-800
             flex items-center
