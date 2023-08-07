@@ -10,7 +10,7 @@ import { Languages } from './components/Languages';
 
 export default function App() {
   return (
-    <div className="font-jose">
+    <div className="font-jose scroll-smooth scroll-py-1">
       <NavBar/>
       <Hero/>
       <Languages/>
