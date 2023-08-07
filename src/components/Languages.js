@@ -35,7 +35,10 @@ export const Languages = () => {
         "OpenGL",
         "OpenCV",
         "Blender",
-        "Three.js"
+        "Three.js",
+        "CI/CD",
+        "Gradle",
+        "Maven"
     ]
     return (
         <div className="relative border-l border-gray-200 flex flex-col items-center mt-4" id="technologies">
