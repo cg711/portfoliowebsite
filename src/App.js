@@ -20,7 +20,11 @@ export default function App() {
           <img src="./solarexpo1.jpg" className="rounded-lg w-96"/>
         </Job>
         <Job img="./leidos.png" id="job2" companyName="Leidos" jobTitle="Software Engineering Intern" duration="May 2023 - August 2023" location="Omaha, Nebraska">
-          <p className="mb-2">I will be in Omaha this summer as a Software Engineering intern with Leidos! Very excited to start and can't wait to see what I can create with Leidos.</p>
+          <p className="mb-2">
+            I had the absolute pleasure of working with Leidos for the summer of 2023. During my time as an intern, I was encouraged to dive head-first into a variety of tasks that allowed me to greatly develop my technical skillset. In particular,
+            I gained valuable experience with React, Spring, Postgresql, Docker, UX, and many more technologies. Below is a picture with the interns!
+          </p>
+          <img src="./leidosinterns.jpg" className="rounded-lg w-72"/>
         </Job>
       </JobTree>
       <ProjectTree>
@@ -120,6 +124,12 @@ export default function App() {
             I decided to make a game out of it!
             It uses the Scratch API to find a random game which is then served to the user who rates it as either good or bad. 
             This one's really fun to play around with to see all the weird and entertaining stuff you can dig up on Scratch.
+          </p>
+        </Project>
+        <Project projName="Playmate" int="/discover.png" img="/playlogo.png" id="proj14" techs="React Native, Spring, Tailwindcss, Postgresql, Docker">
+          <p>
+            Playmate is an in-development mobile app that aims to connect local athletes. The app features an easy-to-use quick play system that
+            allows local games to be formed effortlessly, along with other gameplay types such as tournament play. Below is a tentative peek into what the app may look like.
           </p>
         </Project>
 

@@ -31,7 +31,7 @@ export default function Hero() {
       <div className="flex flex-col items-center">
         <div className="max-w-2xl text-center text-white text-2xl md:pr-16 mx-4">
           <h1>Hi! I'm Casey.</h1>
-          <p>I'm a Junior in Computer Engineer at Iowa State Univeristy, and I love new challenges.</p>
+          <p>I'm a Junior in Computer Engineering at Iowa State Univeristy, and I love new challenges.</p>
         </div>
         <Resume/>
       </div>
