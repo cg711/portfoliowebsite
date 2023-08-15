@@ -6,8 +6,8 @@ export default function JobTree(props) {
     return (
         <div className="relative border-l border-gray-200
         flex flex-col items-center mt-4" id="experience">
-            <h1 className="text-4xl mt-16">Work Experience</h1>
-            <p>(Click for more info!)</p>
+            <h1 className="text-gray-900 text-4xl mt-16">Work Experience</h1>
+            <p className="text-gray-900">(Click for more info!)</p>
             {Children.map(childArray, child => {
                 return ( 
                     <div>
@@ -41,9 +41,9 @@ export default function JobTree(props) {
                                     <button type="button" onClick={() => {
                                         const temp = document.getElementById(child.props.id);
                                         temp.classList.toggle("hidden");
-                                        }} className="h-10 px-5 text-gray-100 bg-indigo-700 rounded-2xl transition-colors duration-150
+                                        }} className="h-10 px-5 text-white bg-blue-500 rounded-2xl transition-colors duration-150
                                         focus:shadow-outline
-                                        hover:bg-indigo-800 sm:mt-0 sm:w-auto">Close</button>
+                                        hover:bg-blue-700 sm:mt-0 sm:w-auto">Close</button>
                                     </div>
                                 </div>
                                 </div>

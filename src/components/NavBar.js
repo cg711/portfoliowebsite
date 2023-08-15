@@ -10,7 +10,7 @@ export default function NavBar() {
     setToggle(!burgerToggle);
   }
   return (
-    <nav className="bg-white shadow-xl">
+    <nav className="bg-white shadow-xl text-gray-900">
       <div className="max-w-6xl mx-auto px-8">
         <div className="flex justify-between space-x-4 items-center hidden md:flex">
           <motion.a whileHover={{scale: 1.1}} href="#technologies" className="py-5">Technologies</motion.a>

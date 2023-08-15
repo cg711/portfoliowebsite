@@ -6,9 +6,10 @@ export default function Resume() {
     return (
         <div className="mt-4 mb-4 md:pr-16">
             <button className="
-            h-10 px-5 text-white bg-indigo-700 rounded-2xl transition-colors duration-150
+            h-10 px-5 text-white bg-none border-2 border-white rounded-2xl transition-colors duration-150
             focus:shadow-outline
-            hover:bg-indigo-800
+            hover:bg-white
+            hover:text-blue-500
             flex items-center
             " onClick={() => {setVisible(true);}}>View Resume 
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 ml-2 inline">

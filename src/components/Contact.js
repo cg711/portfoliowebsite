@@ -24,8 +24,8 @@ export default function Contact() {
             " id="contact">
                 <form ref={form} onSubmit={sendEmail} className="mt-8 space-y-6">
                     <div className="flex flex-col justify-center items-center">
-                        <h1 className="mb-5 text-4xl">Contact me!</h1>
-                        <label htmlFor="name" className="text-xl">
+                        <h1 className="mb-5 text-4xl text-gray-900">Contact me!</h1>
+                        <label htmlFor="name" className="text-xl text-gray-900">
                             Name
                         </label>
                         <input
@@ -52,7 +52,7 @@ export default function Contact() {
                             "
                         placeholder="Name"/>
 
-                        <label htmlFor="email-address" className="text-xl">
+                        <label htmlFor="email-address" className="text-xl text-gray-900">
                             Email address
                         </label>
                         <input
@@ -78,7 +78,7 @@ export default function Contact() {
                                 max-w-lg
                             "
                     placeholder="youremailhere@email.com"/>
-                    <label className="text-xl" htmlFor='textmessage'>
+                    <label className="text-xl text-gray-900" htmlFor='textmessage'>
                         Message 
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 ml-2 inline">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
@@ -103,7 +103,7 @@ export default function Contact() {
                         hover:shadow-2xl
                     "
                     placeholder="Message here!"
-                    rows={15}
+                    rows={10}
                     required
                     />
                     {(hasSent) ? (
@@ -114,13 +114,16 @@ export default function Contact() {
                         </h1>) 
                         : (<input type="submit" value="Send!" className="h-10
                         px-5
-                        text-gray-100
-                        bg-indigo-700
+                        text-blue-500
+                        bg-white
                         rounded-2xl
                         transition-colors
                         duration-150
                         focus:shadow-outline
-                        hover:bg-indigo-800
+                        hover:bg-blue-500
+                        border-2
+                        border-blue-500
+                        hover:text-white
                         mt-4"/>
                         )}
                     </div>

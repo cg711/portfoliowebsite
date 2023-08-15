@@ -5,17 +5,16 @@ export default function ProjectTree(props) {
     const childArray = Children.toArray(props.children);
     return (
         <div className="relative border-l border-gray-200 flex flex-col items-center mt-4" id="projects">
-            <h1 className="text-4xl mt-16">Projects</h1>
-            <p className="mt-2">(Click for more info, or 
+            <h1 className="text-gray-900 text-4xl mt-16">Projects</h1>
+            <p className="text-gray-900 mt-2">(Click one for more info, or 
                 <button type="button" onClick={() => {
                     let rand = Math.floor(Math.random() * childArray.length) + 1;
                     let str = `proj${rand}`
-                    console.log(str);
                     const temp = document.getElementById(str);
                     temp.classList.toggle("hidden");
-                    }} className="h-10 px-5 text-white bg-indigo-700 rounded-2xl transition-colors duration-150
+                    }} className="h-10 px-5 text-blue-500 border-2 border-blue-500 rounded-2xl transition-colors duration-150
                     focus:shadow-outline
-                    hover:bg-indigo-800 sm:mt-0 sm:w-auto inline ml-2">
+                    hover:bg-blue-500 hover:text-white sm:mt-0 sm:w-auto inline mx-2">
                     Suprise me!
                 </button>
               )
@@ -51,9 +50,9 @@ export default function ProjectTree(props) {
                                         <button type="button" onClick={() => {
                                             const temp = document.getElementById(child.props.id);
                                             temp.classList.toggle("hidden");
-                                            }} className="h-10 px-5 text-gray-100 bg-indigo-700 rounded-2xl transition-colors duration-150
+                                            }} className="h-10 px-5 text-white bg-blue-500 rounded-2xl transition-colors duration-150
                                             focus:shadow-outline
-                                            hover:bg-indigo-800 sm:mt-0 sm:w-auto">Close</button>
+                                            hover:bg-blue-700 sm:mt-0 sm:w-auto">Close</button>
                                         </div>
                                     </div>
                                     </div>
@@ -63,7 +62,7 @@ export default function ProjectTree(props) {
                     );
                 })}
             </div>
-            <h1 className="text-xl mt-2">... And More to Come!</h1>
+            <h1 className="text-xl mt-2 text-gray-900">... And More to Come!</h1>
         </div>
     );
 }

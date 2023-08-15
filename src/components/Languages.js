@@ -42,10 +42,10 @@ export const Languages = () => {
     ]
     return (
         <div className="relative border-l border-gray-200 flex flex-col items-center mt-4" id="technologies">
-            <h1 className="text-4xl mt-16 mb-10">Technologies I Use:</h1>
+            <h1 className="text-gray-900 text-4xl mt-16 mb-10">Technologies I Use:</h1>
             <div className="flex flex-row max-w-3xl flex-wrap justify-center sm:max-w-sm md:max-w-3xl">
                 {myTechs.map((tech) => (
-                    <p key={tech} className="text-white bg-blue-500 p-3 rounded-full m-2">{tech}</p>
+                    <p key={tech} className="text-white bg-blue-500 shadow-sm p-3 rounded-full m-2">{tech}</p>
                 ))}
             </div>
         </div>
