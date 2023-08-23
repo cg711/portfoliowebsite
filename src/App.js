@@ -132,6 +132,12 @@ export default function App() {
             allows local games to be formed effortlessly, along with other gameplay types such as tournament play. Below is a tentative peek into what the app may look like.
           </p>
         </Project>
+        <Project projName="Handwriting Detector" int="/handwriting.png" img="/hand.png" id="proj15" techs="Python, OpenCV, Machine Learning (CNN), Arduino">
+          <p>
+            This was a project that combined Python OpenCV and a trained CNN to detect and interpret handwriting. An ardunio was used to
+            give feedback on whether or not handwriting was detected and if it matched a specific word (top left of picture below).
+          </p>
+        </Project>
 
       </ProjectTree>
       <Contact/>
