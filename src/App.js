@@ -138,6 +138,12 @@ export default function App() {
             give feedback on whether or not handwriting was detected and if it matched a specific word (top left of picture below).
           </p>
         </Project>
+        <Project projName="FPGA Vault System" int="/vault.jpg" img="/fpga.png" id="proj16" techs="FPGA, Verilog, Quartus Prime">
+          <p>
+            This was a project that utilized a FPGA board to create a vault mechanism supporting up to four accounts. For each account you can login with a password, change the password, and logout. The entire system
+            is built with Verilog and other digital logic components. Below is a snippet of the mechanism in Quartus Prime.
+          </p>
+        </Project>
 
       </ProjectTree>
       <Contact/>

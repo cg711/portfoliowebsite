@@ -38,7 +38,11 @@ export const Languages = () => {
         "Three.js",
         "CI/CD",
         "Gradle",
-        "Maven"
+        "Maven",
+        "Verilog",
+        "VHDL",
+        "Quartus Prime",
+        "ModelSim"        
     ]
     return (
         <div className="relative border-l border-gray-200 flex flex-col items-center mt-4" id="technologies">
