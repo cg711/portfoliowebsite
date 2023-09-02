@@ -34,10 +34,10 @@ export default function NavBar() {
         </div>
         <div className="mobilemenu hidden flex flex-col items-center md:hidden">
           {/* hover:bg-gray-200 */}
-          <motion.a whileHover={{scale: 1.1}} href="#technologies" className="py-2">Technologies</motion.a>
-          <motion.a whileHover={{scale: 1.1}} href="#experience" className="py-2">Experience</motion.a>
-          <motion.a whileHover={{scale: 1.1}} href="#projects" className="py-2">Projects</motion.a>
-          <motion.a whileHover={{scale: 1.1}} href="#contact" className="py-2">Contact</motion.a>
+          <motion.a onClick={toggleVisible} whileHover={{scale: 1.1}} href="#technologies" className="py-2">Technologies</motion.a>
+          <motion.a onClick={toggleVisible} whileHover={{scale: 1.1}} href="#experience" className="py-2">Experience</motion.a>
+          <motion.a onClick={toggleVisible} whileHover={{scale: 1.1}} href="#projects" className="py-2">Projects</motion.a>
+          <motion.a onClick={toggleVisible} whileHover={{scale: 1.1}} href="#contact" className="py-2">Contact</motion.a>
         </div>
       </div> 
     </nav>
