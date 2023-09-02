@@ -22,7 +22,7 @@ export default function Hero() {
           <Canvas>
             <ambientLight intensity={1}/>
             <spotLight intensity={0.5} position={[0,0.5,1.5]}/>
-            <Suspense fallback={<Svg url="/loading.svg"/>}>
+            <Suspense fallback={<Svg src='./loading.svg'/>}>
               <Picture/>
             </Suspense>
           </Canvas>
