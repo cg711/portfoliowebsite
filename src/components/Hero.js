@@ -3,7 +3,7 @@ import { Canvas } from '@react-three/fiber';
 import Resume from './Resume';
 import { motion } from 'framer-motion';
 import { Suspense } from 'react';
-import { Image } from '@react-three/drei';
+import { Html } from '@react-three/drei';
 
 export default function Hero() {
 
@@ -22,7 +22,7 @@ export default function Hero() {
           <Canvas>
             <ambientLight intensity={1}/>
             <spotLight intensity={0.5} position={[0,0.5,1.5]}/>
-            <Suspense fallback={<Image url='./loading.svg'/>}>
+            <Suspense fallback={<Html><img src='./loading.svg'/></Html>}>
               <Picture/>
             </Suspense>
           </Canvas>
