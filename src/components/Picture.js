@@ -1,40 +1,18 @@
-import React, { useRef} from "react";
-import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
+import { useLoader } from "@react-three/fiber";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
 export function Picture(props) {
-  const { nodes, materials } = useGLTF("/portfolio-picture.glb");
-  const picture = useRef();
+  const gltf = useLoader(GLTFLoader, './portfolio-picture.glb');
 
   useFrame(({clock}) => {
-    picture.current.rotation.z = clock.getElapsedTime() * 0.3;
+    gltf.scene.rotation.y = clock.getElapsedTime() * 0.3;
   });
-
-
   return (
-    <group {...props} dispose={null}>
-      <group
-        position={[0, 1.25, 2]}
-        rotation={[Math.PI / 2, 0, -Math.PI / 2]}
-        scale={0.10}
-        ref={picture}
-      >
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Plane002.geometry}
-          material={materials["Material.001"]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Plane002_1.geometry}
-          material={materials.Picture}
-        />
-      </group>
-    </group>
-  );
+    <primitive
+              object={gltf.scene}
+              position={[0,0.5,-1]}
+              rotation={[0, -Math.PI / 2, 0]}
+    />
+  )
 }
-
-useGLTF.preload("/portfolio-picture.glb");
-

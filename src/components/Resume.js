@@ -4,7 +4,7 @@ import {useState} from 'react';
 export default function Resume() {
     const [visible, setVisible] = useState(false);
     return (
-        <div className="mt-4 mb-4 md:pr-16">
+        <div className="mt-4 mb-4">
             <button className="
             h-10 px-5 text-white bg-none border-2 border-white rounded-2xl transition-colors duration-150
             focus:shadow-outline

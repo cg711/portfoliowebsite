@@ -12,6 +12,7 @@ export default function App() {
   return (
     <div className="font-jose scroll-smooth scroll-py-1">
       <NavBar/>
+      <div className="relative">
       <Hero/>
       <Languages/>
       <JobTree>
@@ -148,6 +149,8 @@ export default function App() {
       </ProjectTree>
       <Contact/>
       <Footer/>
+      </div>
+
     </div>
   );
 }
