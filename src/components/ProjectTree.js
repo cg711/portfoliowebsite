@@ -1,12 +1,13 @@
 import { Children } from "react";
 import {motion} from "framer-motion";
+import { Papers } from "./Papers";
 
 export default function ProjectTree(props) {
     const childArray = Children.toArray(props.children);
     return (
         <div className="relative border-l border-gray-200 flex flex-col items-center mt-4" id="projects">
-            <h1 className="text-gray-900 text-4xl mt-16">Projects</h1>
-            <p className="text-gray-900 mt-2">(Click one for more info, or 
+            <h1 className="text-gray-900 text-4xl mt-16">Projects and Works</h1>
+            <p className="text-gray-900 mt-2">(Click a bubble for more info, or 
                 <button type="button" onClick={() => {
                     let rand = Math.floor(Math.random() * childArray.length) + 1;
                     let str = `proj${rand}`
@@ -62,7 +63,8 @@ export default function ProjectTree(props) {
                     );
                 })}
             </div>
-            <h1 className="text-xl mt-2 text-gray-900">... And More to Come!</h1>
+            <Papers/>
+            {/* <h1 className="text-xl mt-16 text-gray-900">... More to Come!</h1> */}
         </div>
     );
 }

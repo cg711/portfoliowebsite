@@ -15,10 +15,11 @@ export default function Contact() {
         <div className="relative
             min-h-screen overflow-hidden
             font-jose
-            mt-16 
+            mt-4 
+            -mb-48
             ">
             <div className="
-            w-9/12 p-6 m-auto bg-white rounded-md
+            w-9/12 p-6 m-auto  rounded-md
             max-w-screen-lg	
         rin-2 ring-indigo-600
             " id="contact">

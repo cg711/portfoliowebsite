@@ -15,7 +15,7 @@ export default function NavBar() {
         <div className="flex justify-between space-x-4 items-center hidden md:flex">
           <motion.a whileHover={{scale: 1.1}} href="#technologies" className="py-5">Technologies</motion.a>
           <motion.a whileHover={{scale: 1.1}} href="#experience" className="py-5">Experience</motion.a>
-          <motion.a whileHover={{scale: 1.1}} href="#projects" className="py-5">Projects</motion.a>
+          <motion.a whileHover={{scale: 1.1}} href="#projects" className="py-5">Projects and Works</motion.a>
           <motion.a whileHover={{scale: 1.1}} href="#contact" className="py-5">Contact</motion.a>
         </div>
         <div className="md:hidden flex items-center py-5 justify-end">
@@ -36,7 +36,7 @@ export default function NavBar() {
           {/* hover:bg-gray-200 */}
           <motion.a onClick={toggleVisible} whileHover={{scale: 1.1}} href="#technologies" className="py-2">Technologies</motion.a>
           <motion.a onClick={toggleVisible} whileHover={{scale: 1.1}} href="#experience" className="py-2">Experience</motion.a>
-          <motion.a onClick={toggleVisible} whileHover={{scale: 1.1}} href="#projects" className="py-2">Projects</motion.a>
+          <motion.a onClick={toggleVisible} whileHover={{scale: 1.1}} href="#projects" className="py-2">Projects and Works</motion.a>
           <motion.a onClick={toggleVisible} whileHover={{scale: 1.1}} href="#contact" className="py-2">Contact</motion.a>
         </div>
       </div> 
