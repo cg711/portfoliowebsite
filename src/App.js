@@ -7,7 +7,6 @@ import ProjectTree from './components/ProjectTree';
 import Project from './components/Project';
 import Footer from './components/Footer';
 import { Languages } from './components/Languages';
-import { Papers } from './components/Papers';
 
 export default function App() {
   return (
@@ -27,6 +26,18 @@ export default function App() {
               I gained valuable experience with React, Spring, Postgresql, Docker, UX, and many more technologies. Below is a picture with the interns!
             </p>
             <img src="./leidosinterns.jpg" className="rounded-lg w-72"/>
+          </Job>
+          <Job img="./saltech.png" id="job3" companyName="Saltech Systems" jobTitle="Web Development Intern" duration="October 2023 - Present" location="Ames, Iowa">
+            <p className="mb-2">
+              I am currently a Web Development intern at Saltech Systems! My work mainly concerns developing applications with Adobe Cold Fusion and Flutter for a variety of clients.
+            </p>
+            <img src="./saltech.png" className="rounded-lg mt-4"/>
+          </Job>
+          <Job img="./generalmills.png" id="job4" companyName="General Mills" jobTitle="Digital & Technology Intern" duration="TBD" location="Minneapolis, Minnesota">
+            <p className="mb-2">
+              I am looking forward to working with General Mills for the upcoming summer as a Digital & Technology Intern!
+            </p>
+            <img src="./accepted.jpeg" className="rounded-lg"/>
           </Job>
         </JobTree>
         <ProjectTree>
@@ -74,13 +85,6 @@ export default function App() {
               which is responsible for diverting excess rainwater from the clinic to managable areas.
               It's been such a fun experience and it's been so fun to collaborate with others to use
               our engineering skillsets for good!
-            </p>
-          </Project>
-          <Project projName="Facetime Clone" id="proj7" img="/ftclone.png" techs="WebRTC, Socket.io, Javascript" int="/webrtc.png">
-            <p>
-              This was a mini project I did. I wanted to replicate Facetime, and so to do this, I used WebRTC as well as Socket.io
-              to establish a peer-to-peer connection between two clients. I would show you a full picture of the connection, but for some
-              reason I can't get OBS to work properly, so this will have to do for now!
             </p>
           </Project>
           <Project projName="CSE Club (ISU)" techs="N/A" id="proj8" img="/cseclub.png" int="/cseclub.png">
@@ -144,6 +148,12 @@ export default function App() {
             <p>
               This was a project that utilized a FPGA board to create a vault mechanism supporting up to four accounts. For each account you can login with a password, change the password, and logout. The entire system
               is built with Verilog and other digital logic components. Below is a snippet of the mechanism in Quartus Prime.
+            </p>
+          </Project>
+          <Project projName="MIPS Pipelined Processor" int="/pipelined.jpeg" img="/mips.png" id="proj17" techs="VHDL, Questa Sim, FGPA">
+            <p>
+              This was a project that utilized VHDL and Questa Sim to build, test, and simulate a 32-bit MIPS-like processor. The resulting processor supports most of the existing MIPS ISA. In addition to a single-cycle implementation,
+              both multi-cycle and pipelined implementations were created as well in an effort to improve overall program execution times. Below is a rough diagram of my final pipelined design!
             </p>
           </Project>
         </ProjectTree>
