@@ -16,28 +16,24 @@ export default function App() {
         <Hero/>
         <Languages/>
         <JobTree>
-          <Job img="./siback.png" id="job1" companyName="Solar Informatics" jobTitle="Software Engineering Intern" duration="May 2022 - August 2022" location="Minneapolis, Minnesota">
+          <Job img="./siback.png" id="job1" companyName="Solar Informatics" jobTitle="Software Engineering Intern" duration="May 2022 - August 2022" location="Minneapolis, Minnesota" int="./solarexpo1.jpg">
             <p className="mb-2">During my time at Solar Informatics I developed a lot with Springboot, MySQL, and other various backend technologies. It was very rewarding to contribute to a company centered around renewable technology! Below is a picture with the Solar Informatics family.</p>
-            <img src="./solarexpo1.jpg" className="rounded-lg w-96"/>
           </Job>
-          <Job img="./leidos.png" id="job2" companyName="Leidos" jobTitle="Software Engineering Intern" duration="May 2023 - August 2023" location="Omaha, Nebraska">
+          <Job img="./leidos.png" id="job2" companyName="Leidos" jobTitle="Software Engineering Intern" duration="May 2023 - August 2023" location="Omaha, Nebraska" int="./leidosinterns.jpg">
             <p className="mb-2">
               I had the absolute pleasure of working with Leidos for the summer of 2023. During my time as an intern, I was encouraged to dive head-first into a variety of tasks that allowed me to greatly develop my technical skillset. In particular,
               I gained valuable experience with React, Spring, Postgresql, Docker, UX, and many more technologies. Below is a picture with the interns!
             </p>
-            <img src="./leidosinterns.jpg" className="rounded-lg w-72"/>
           </Job>
-          <Job img="./saltech.png" id="job3" companyName="Saltech Systems" jobTitle="Web Development Intern" duration="October 2023 - Present" location="Ames, Iowa">
+          <Job img="./saltech.png" id="job3" companyName="Saltech Systems" jobTitle="Web Development Intern" duration="October 2023 - Present" location="Ames, Iowa" int="./saltech.png">
             <p className="mb-2">
               I am currently a Web Development intern at Saltech Systems! My work mainly concerns developing applications with Adobe Cold Fusion and Flutter for a variety of clients.
             </p>
-            <img src="./saltech.png" className="rounded-lg mt-4"/>
           </Job>
-          <Job img="./generalmills.png" id="job4" companyName="General Mills" jobTitle="Digital & Technology Intern" duration="TBD" location="Minneapolis, Minnesota">
+          <Job img="./generalmills.png" id="job4" companyName="General Mills" jobTitle="Digital & Technology Intern" duration="TBD" location="TBD" int="./accepted.jpeg">
             <p className="mb-2">
               I am looking forward to working with General Mills for the upcoming summer as a Digital & Technology Intern!
             </p>
-            <img src="./accepted.jpeg" className="rounded-lg"/>
           </Job>
         </JobTree>
         <ProjectTree>
@@ -87,14 +83,14 @@ export default function App() {
               our engineering skillsets for good!
             </p>
           </Project>
-          <Project projName="CSE Club (ISU)" techs="N/A" id="proj8" img="/cseclub.png" int="/cseclub.png">
+          <Project projName="CSE Club (ISU)" techs="N/A" id="proj7" img="/cseclub.png" int="/cseclub.png">
             <p>
               The CSE Club at ISU does a lot of different cool things, but probably my favorite has been their Hackathons.
               If you don't know, a Hackathon is a programming competition between anywhere from 5-20 teams, and you compete to
               create the fastest code for 7-10 different tasks. Super fun!
             </p>
           </Project>
-          <Project projName="Portfolio Website" id="proj9" img="/port.png" techs="React, Tailwindcss, Framer.js, Vercel, Three.js, Blender" int="portfolio.png">
+          <Project projName="Portfolio Website" id="proj8" img="/port.png" techs="React, Tailwindcss, Framer.js, Vercel, Three.js, Blender" int="portfolio.png">
             <p>
               This website was fun to create! Although I have created websites with React before, I had never
               integrated them with Tailwind before so this was a great learning opportunity for me. The 3D model of my
@@ -102,14 +98,14 @@ export default function App() {
               Framer.js for animations, everything is custom.
             </p>
           </Project>
-          <Project projName="Pong Clone" id="proj10" img="/pong.png" techs="Java" int="/ponggame.png">
+          <Project projName="Pong Clone" id="proj9" img="/pong.png" techs="Java" int="/ponggame.png">
             <p>
               This was just a fun project I made to get better with Java and to start learning game development. It's basically a pong clone,
               you can have up to two players, and there isn't a score limit. This was a great way to learn how game loops function as well
               as how JPanel and some other sound libraries work in Java.
             </p>
           </Project>
-          <Project projName="Cybot (ISU)" id="proj11" img="/cybot.png" techs="C, MatLab, Microcontrollers, ASM" int="/testfield.jpg">
+          <Project projName="Cybot (ISU)" id="proj10" img="/cybot.png" techs="C, MatLab, Microcontrollers, ASM" int="/testfield.jpg">
             <p>
               This was a project for my CPrE 288 class at ISU. The end goal was to manually control an iRobot to
               a desired end location while avoiding any objects that were in the robot's path. For the project, my team and I were
@@ -118,13 +114,13 @@ export default function App() {
               also able to send commands to the iRobot for movement. Below is a picture of the field where the iRobot had to manuvere!
             </p>
           </Project>
-          <Project projName="Worst Location Finder" int="/worstplaces.png" img="/thumbsdown.png" id="proj12" techs="Javascript, React, Tailwindcss, Google Maps API">
+          <Project projName="Worst Location Finder" int="/worstplaces.png" img="/thumbsdown.png" id="proj11" techs="Javascript, React, Tailwindcss, Google Maps API">
             <p>
               This is a website that finds the worst rated locations within a 20 mile radius of your current location. "Why would you make this?" I don't know,
               I thought it was kind of funny. You give it a keyword for the type of place you want to find (i.e. store, gym, etc.) and then it finds it and shoots confetti out.
             </p>
           </Project>
-          <Project projName="Scratch Roulette" int="/roulette.png" img="/scratchroulette.png" id="proj13" techs="React, Tailwindcss, Scratch API">
+          <Project projName="Scratch Roulette" int="/roulette.png" img="/scratchroulette.png" id="proj12" techs="React, Tailwindcss, Scratch API">
             <p>
               I used Scratch a ton as a kid and I remember all of the awesome and terrible projects people made on the website, so that's why 
               I decided to make a game out of it!
@@ -132,25 +128,25 @@ export default function App() {
               This one's really fun to play around with to see all the weird and entertaining stuff you can dig up on Scratch.
             </p>
           </Project>
-          <Project projName="Playmate" int="/discover.png" img="/playlogo.png" id="proj14" techs="React Native, Spring, Tailwindcss, Postgresql, Docker">
+          <Project projName="Playmate" int="/discover.png" img="/playlogo.png" id="proj13" techs="React Native, Spring, Tailwindcss, Postgresql, Docker">
             <p>
               Playmate is an in-development mobile app that aims to connect local athletes. The app features an easy-to-use quick play system that
               allows local games to be formed effortlessly, along with other gameplay types such as tournament play. Below is a tentative peek into what the app may look like.
             </p>
           </Project>
-          <Project projName="Handwriting Detector" int="/handwriting.png" img="/hand.png" id="proj15" techs="Python, OpenCV, Machine Learning (CNN), Arduino">
+          <Project projName="Handwriting Detector" int="/handwriting.png" img="/hand.png" id="proj14" techs="Python, OpenCV, Machine Learning (CNN), Arduino">
             <p>
-              This was a project that combined Python OpenCV and a trained CNN to detect and interpret handwriting. An ardunio was used to
+              This was a project that combined Python OpenCV and a trained CNN to detect and interpret handwriting. An Arduino was used to
               give feedback on whether or not handwriting was detected and if it matched a specific word (top left of picture below).
             </p>
           </Project>
-          <Project projName="FPGA Vault System" int="/vault.jpg" img="/fpga.png" id="proj16" techs="FPGA, Verilog, Quartus Prime">
+          <Project projName="FPGA Vault System" int="/vault.jpg" img="/fpga.png" id="proj15" techs="FPGA, Verilog, Quartus Prime">
             <p>
               This was a project that utilized a FPGA board to create a vault mechanism supporting up to four accounts. For each account you can login with a password, change the password, and logout. The entire system
               is built with Verilog and other digital logic components. Below is a snippet of the mechanism in Quartus Prime.
             </p>
           </Project>
-          <Project projName="MIPS Pipelined Processor" int="/pipelined.jpeg" img="/mips.png" id="proj17" techs="VHDL, Questa Sim, FGPA">
+          <Project projName="MIPS Pipelined Processor" int="/pipelined.jpeg" img="/mips.png" id="proj16" techs="VHDL, Questa Sim, FGPA">
             <p>
               This was a project that utilized VHDL and Questa Sim to build, test, and simulate a 32-bit MIPS-like processor. The resulting processor supports most of the existing MIPS ISA. In addition to a single-cycle implementation,
               both multi-cycle and pipelined implementations were created as well in an effort to improve overall program execution times. Below is a rough diagram of my final pipelined design!

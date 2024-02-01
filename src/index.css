@@ -6,3 +6,30 @@
 /* @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities"; */
+@keyframes blow-up {
+    0% {
+        transform: scale(0.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes bg-fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.blow-up {
+    animation: blow-up 1s ease-out;
+}
+
+.bg-fade-in {
+    animation: bg-fade-in 1s ease-out;
+}

@@ -25,13 +25,13 @@ export const Languages = () => {
         "React Native",
         "Google Protobuf",
         "MATLAB",
-        "Figma (UX Design)",
+        "Figma",
         "Git",
-        "Linux OS",
+        "(Flavors of) Unix",
         "Mac OS",
         "Windows OS",
         "Verilog",
-        "Bash & Powershell",
+        "Bash",
         "REST",
         "OpenGL",
         "OpenCV",
@@ -41,17 +41,14 @@ export const Languages = () => {
         "Gradle",
         "Maven",
         "VHDL",
+        "Ruby & Rails",
         "Quartus Prime",
         "ModelSim"        
     ]
 
-    // const checkIfFull = (e) => {
-    //     console.log(e);
-    // }
-
     return (
         <div className="relative border-l border-gray-200 flex flex-col items-center mt-4" id="technologies">
-            <h1 className="text-gray-900 text-4xl mt-16 mb-10">Technologies I Use:</h1>
+            <h1 className="text-gray-900 text-4xl mt-16 mb-10">Tools in my Belt:</h1>
             <div className="flex flex-row max-w-3xl flex-wrap justify-center sm:max-w-sm md:max-w-3xl">
                 {myTechs.map((tech) => (
                     <motion.p whileHover={{scale: 1.1}} key={tech} className={`text-white bg-blue-500 shadow-sm p-3 rounded-full m-2`}>{tech}</motion.p>
