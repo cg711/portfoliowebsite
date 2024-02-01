@@ -5,8 +5,8 @@ export default function Project(props) {
         <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
           <div className="sm:flex sm:items-start">
             <div className="flex text-gray-900 flex-col flex-nowrap items-center justify-center">
-              <h1 className="font-bold text-2xl">{props.projName}</h1>
-              <h2 className="my-2 text-gray-400 text-sm">
+              <h1 className="font-bold text-2xl text-center">{props.projName}</h1>
+              <h2 className="my-2 text-gray-400 text-sm text-center">
                 Technologies: {props.techs}
               </h2>
               <div className="text-center my-2">{props.children}</div>
