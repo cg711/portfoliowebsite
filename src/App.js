@@ -67,11 +67,9 @@ export default function App() {
           </Project>
           <Project projName="Cribbage Online" id="proj5" img='/cribbageboard.webp' techs="Springboot, React, WebSocket, Node.JS, MySQL" int="/lobby.webp">
             <p>
-              Cribbage Online is a multiplayer online game that uses websockets to connect up to 4 players in a game of cribbage.
-              This project was a major learning experience for me, and it allowed me to create a multiplayer game which 
-              is something I've wanted to do for a long time. At some point I want to go back to this when I have time
-              and pretty it up, but for now I'm happy with the final result. Eventually, I have plans to host it online,
-              but I need to find a cost effective way to do so. Below is a picture of the lobby!
+              Cribbage Online is a multiplayer online game that uses websockets to connect up to 4 players in a game of cribbage. 
+              Although it never got deployed, building this app was super fun and really tested my skills as a <em>full-stack</em> developer. Challenged my algorithm writing skills
+              as well as introduced me to real-time networking.
             </p>
           </Project>
           <Project projName="Engineers Without Borders (ISU)" id="proj6" img="/EWB.webp" techs="N/A" int="EWBgroup.webp">
@@ -85,33 +83,26 @@ export default function App() {
           </Project>
           <Project projName="CSE Club (ISU)" techs="N/A" id="proj7" img="/cseclub.webp" int="/cseclub.webp">
             <p>
-              The CSE Club at ISU does a lot of different cool things, but probably my favorite has been their Hackathons.
-              If you don't know, a Hackathon is a programming competition between anywhere from 5-20 teams, and you compete to
-              create the fastest code for 7-10 different tasks. Super fun!
+              I'm mainly involved with the Hackathons the CSE Club at ISU holds. Super fun way to work with other engineers and collaborate on some pretty neat projects!
             </p>
           </Project>
           <Project projName="Portfolio Website" id="proj8" img="/port.webp" techs="React, Tailwindcss, Framer.js, Vercel, Three.js, Blender" int="portfolio.webp">
             <p>
-              This website was fun to create! Although I have created websites with React before, I had never
-              integrated them with Tailwind before so this was a great learning opportunity for me. The 3D model of my
-              picture was modeled in Blender, and rendered in the browser with Three.js. Otherwise, besides a little help from
-              Framer.js for animations, everything is custom.
+              You're here! This website uses Three.js to render my picture, Tailwindcss (and some minimal custom CSS) for styling, and React. I hope you like it!
             </p>
           </Project>
           <Project projName="Pong Clone" id="proj9" img="/pong.webp" techs="Java" int="/ponggame.webp">
             <p>
-              This was just a fun project I made to get better with Java and to start learning game development. It's basically a pong clone,
-              you can have up to two players, and there isn't a score limit. This was a great way to learn how game loops function as well
-              as how JPanel and some other sound libraries work in Java.
+              Pong in Java! Nothing too crazy, this was an early project to help me get familiar with Java.
             </p>
           </Project>
           <Project projName="Cybot (ISU)" id="proj10" img="/cybot.webp" techs="C, MatLab, Microcontrollers, ASM" int="/testfield.webp">
             <p>
-              This was a project for my CPrE 288 class at ISU. The end goal was to manually control an iRobot to
+              This was a project for an Embedded Systems class at ISU. The end goal was to manually control a robot vaccum to
               a desired end location while avoiding any objects that were in the robot's path. For the project, my team and I were
-              not allowed to see the robots location on the field, so to visualize the iRobot's location
-              we created a MatLab GUI to plot objects on the field and the actual iRobot's location. From MatLab, we were
-              also able to send commands to the iRobot for movement. Below is a picture of the field where the iRobot had to manuvere!
+              not allowed to see the robots location on the field, so to visualize the robot vaccum's location
+              we created a MatLab GUI to project scanned-in data from the field onto our screens. From MatLab, we were
+              also able to send commands to the robot for movement. To the side is a picture of the field!
             </p>
           </Project>
           <Project projName="Worst Location Finder" int="/worstplaces.webp" img="/thumbsdown.webp" id="proj11" techs="Javascript, React, Tailwindcss, Google Maps API">
@@ -122,21 +113,19 @@ export default function App() {
           </Project>
           <Project projName="Scratch Roulette" int="/roulette.webp" img="/scratchroulette.webp" id="proj12" techs="React, Tailwindcss, Scratch API">
             <p>
-              I used Scratch a ton as a kid and I remember all of the awesome and terrible projects people made on the website, so that's why 
-              I decided to make a game out of it!
-              It uses the Scratch API to find a random game which is then served to the user who rates it as either good or bad. 
-              This one's really fun to play around with to see all the weird and entertaining stuff you can dig up on Scratch.
+              Scratch Roulette is a pretty easy game; you enter a number of spins, and a number of scratch games are returned to you. You then get to play whatever game you get and rate it good or bad. This one's fun to mess
+              around with and see what random stuff comes up.
             </p>
           </Project>
           <Project projName="Playmate" int="/discover.webp" img="/playlogo.webp" id="proj13" techs="React Native, Spring, Tailwindcss, Postgresql, Docker">
             <p>
               Playmate is an in-development mobile app that aims to connect local athletes. The app features an easy-to-use quick play system that
-              allows local games to be formed effortlessly, along with other gameplay types such as tournament play. Below is a tentative peek into what the app may look like.
+              allows local games to be formed effortlessly, along with other gameplay types such as tournament play. To the side is a picture of the apps dashboard.
             </p>
           </Project>
           <Project projName="Handwriting Detector" int="/handwriting.webp" img="/hand.webp" id="proj14" techs="Python, OpenCV, Machine Learning (CNN), Arduino">
             <p>
-              This was a project that combined Python OpenCV and a trained CNN to detect and interpret handwriting. An Arduino was used to
+              This was a project that combined Python OpenCV and a trained CNN (through <em>Tensorflow</em>) to detect and interpret handwriting. An Arduino was used to
               give feedback on whether or not handwriting was detected and if it matched a specific word (top left of picture below).
             </p>
           </Project>
@@ -150,6 +139,13 @@ export default function App() {
             <p>
               This was a project that utilized VHDL and Questa Sim to build, test, and simulate a 32-bit MIPS-like processor. The resulting processor supports most of the existing MIPS ISA. In addition to a single-cycle implementation,
               both multi-cycle and pipelined implementations were created as well in an effort to improve overall program execution times. Below is a rough diagram of my final pipelined design!
+            </p>
+          </Project>
+          <Project projName="Duck Chat" int ="/ducktalk_wide.webp" img="/ducktalk.webp" id="proj17" techs="Three.JS, GLSL (Shaders), Javascript">
+            <p>
+              This was made in preparation for a hackathon, I wanted to learn more about OpenGL and GLSL shaders so I made this simple website. The scene is rendered with Three.JS, and the models are not original unfortunately (from <a className="text-blue-300 hover:text-blue-500" href="https://www.models-resource.com/" target="_blank">this website</a>).
+              You can type some text into the input box and the duck will talk back to you in intervals of quacks based on the syllables in a word (Banjo Kazooie style). Nothing too crazy, but thought it was a funny project so I'm putting it here.
+          
             </p>
           </Project>
         </ProjectTree>
