@@ -19,7 +19,7 @@ export default function Resume() {
             <Viewer
             visible = {visible}
             onClose={()=>{setVisible(false);}}
-            images={[{src:'./resume.jpg',alt:"Resume"}]}
+            images={[{src:'./resume.webp',alt:"Resume"}]}
             rotatable={false}
             noImgDetails={true}
             showTotal={false}
