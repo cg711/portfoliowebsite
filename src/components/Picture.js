@@ -1,30 +1,51 @@
+import React, { useState, useEffect } from "react";
 import { useFrame } from "@react-three/fiber";
-import { useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { useState } from "react";
 import { Vector2 } from "three";
 
 export function Picture(props) {
-  const gltf = useLoader(GLTFLoader, './portfolio-picture.glb');
+  const [model, setModel] = useState(null);
+  const [loading, setLoading] = useState(true);
 
-  const [prevX, setPrevX] = useState(0);
-  const [prevAngle, setPrevAngle] = useState(0);
+  useEffect(() => {
+    const loader = new GLTFLoader();
+    loader.load(
+      './portfolio-picture.glb',
+      (gltf) => {
+        
+        setModel(gltf.scene);
+        setLoading(false);
+        document.querySelector("#loading-svg").style.display = "none";
+      },
+      undefined,
+      (error) => {
+        console.error('Error loading GLTF model:', error);
+      }
+    );
+  }, []);
 
+  let prevX = 0;
+  let prevAngle = 0;
+  const rotationSpeed = 0.3;
 
   useFrame((frame) => {
-    if (frame.mouse.distanceTo(new Vector2(gltf.scene.position.x, gltf.scene.position.y)) < 1) {
-      setPrevX(frame.mouse.x);
-    } else {
-      gltf.scene.rotation.y = prevAngle + frame.clock.getElapsedTime() * 0.3;
+    if (model) {
+      const distanceToMouse = frame.mouse.distanceTo(new Vector2(model.position.x, model.position.y));
+      if (distanceToMouse < 1) {
+        prevX = frame.mouse.x;
+      } else {
+        model.rotation.y = prevAngle + frame.clock.getElapsedTime() * rotationSpeed;
+      }
+      model.rotation.y += (rotationSpeed * (prevX - prevAngle) + 90);
+      prevAngle = model.rotation.y;
     }
-     gltf.scene.rotation.y += (0.3 * (prevX - prevAngle) + 90);
-     setPrevAngle(gltf.scene.rotation.y);
   });
-  return (
+
+  return loading ? null : (
     <primitive
-              object={gltf.scene}
-              position={[0,0.5,-1]}
-              rotation={[0, -Math.PI / 2, 0]}
+      object={model}
+      position={[0, 0.5, -1]}
+      rotation={[0, -Math.PI / 2, 0]}
     />
-  )
+  );
 }

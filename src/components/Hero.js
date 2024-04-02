@@ -3,7 +3,7 @@ import { Canvas } from '@react-three/fiber';
 import Resume from './Resume';
 import { motion } from 'framer-motion';
 import { Suspense } from 'react';
-import { Html } from '@react-three/drei';
+import { Html, Svg } from '@react-three/drei';
 
 export default function Hero() {
 
@@ -18,14 +18,13 @@ export default function Hero() {
     ">
       
       {/* three.js portfolio model m-auto*/}
-      <div className="h-screen w-full -mb-32">
+      <div className="h-screen w-full -mb-32 pic-container relative">
           <Canvas>
             <ambientLight intensity={1}/>
             <spotLight intensity={0.5} position={[0,0.5,1.5]}/>
-            <Suspense fallback={<Html><img src='./loading.svg'/></Html>}>
-              <Picture/>
-            </Suspense>
+            <Picture/>
           </Canvas>
+          <img src="./loading.svg" alt="loading" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-2" id="loading-svg" height={100} width={100}/>
       </div>
       <div className="flex flex-col items-center ">
         <div className="max-w-2xl min-w-xl text-center text-white text-2xl mx-8 mb-2">
