@@ -43,7 +43,8 @@ export const Languages = () => {
         "VHDL",
         "Ruby & Rails",
         "Quartus Prime",
-        "ModelSim"        
+        "ModelSim",
+        "Rust"        
     ]
 
     return (

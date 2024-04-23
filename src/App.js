@@ -145,7 +145,12 @@ export default function App() {
             <p>
               This was made in preparation for a hackathon, I wanted to learn more about OpenGL and GLSL shaders so I made this simple website. The scene is rendered with Three.JS, and the models are not original unfortunately (from <a className="text-blue-300 hover:text-blue-500" href="https://www.models-resource.com/" target="_blank">this website</a>).
               You can type some text into the input box and the duck will talk back to you in intervals of quacks based on the syllables in a word (Banjo Kazooie style). Nothing too crazy, but thought it was a funny project so I'm putting it here.
-          
+            </p>
+          </Project>
+          <Project projName="CHIP-8 Emulator" int="/chip8.webp" img="/chip8logo.webp" id="proj18" techs="Rust, Emulation">
+            <p>
+              I built a CHIP-8 emulator in Rust! It can play a number of smaller (less than 4KB max) games like pong, breakout, and simon says to name a few. This was a great project to learn more about Rust
+              and working with emulators at the lowest level. On the right is an emulation of pong!
             </p>
           </Project>
         </ProjectTree>
