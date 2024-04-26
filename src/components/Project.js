@@ -1,3 +1,4 @@
+
 export default function Project(props) {
   return (
     <div className="fixed z-10 overflow-y-auto blow-up flex justify-evenly items-center max-h-fit w-9/12 flex-col lg:flex-row gap-11">
@@ -28,8 +29,7 @@ export default function Project(props) {
           </button>
         </div>
       </div>
-      <img alt="..." className="rounded-2xl mt-2 w-5/12 h-5/12 shadow-lg max-w-xl max-h-xl" src={props.int} />
-
+      <img alt="..." className="rounded-2xl mt-2 w-5/12 h-5/12 shadow-lg max-w-xl max-h-xl" src={props.int} id="int-image" />
     </div>
   );
 }

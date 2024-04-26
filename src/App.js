@@ -17,17 +17,20 @@ export default function App() {
         <Languages/>
         <JobTree>
           <Job img="./siback.webp" id="job1" companyName="Solar Informatics" jobTitle="Software Engineering Intern" duration="May 2022 - August 2022" location="Minneapolis, Minnesota" int="./solarexpo1.webp">
-            <p className="mb-2">During my time at Solar Informatics I developed a lot with Springboot, MySQL, and other various backend technologies. It was very rewarding to contribute to a company centered around renewable technology! Below is a picture with the Solar Informatics family.</p>
+            <p className="mb-2">At Solar Informatics, I worked extensively with Springboot, MySQL, and various backend technologies to build a vast microservices application. 
+I immensely value the perspective I gained working with Solar Informatics. Working with software hands-on, learning from various industry leaders at solar conferences, and contributing
+ towards furthering renewables has been incredibly rewarding.</p>
           </Job>
           <Job img="./leidos.webp" id="job2" companyName="Leidos" jobTitle="Software Engineering Intern" duration="May 2023 - August 2023" location="Omaha, Nebraska" int="./leidosinterns.webp">
             <p className="mb-2">
-              I had the absolute pleasure of working with Leidos for the summer of 2023. During my time as an intern, I was encouraged to dive head-first into a variety of tasks that allowed me to greatly develop my technical skillset. In particular,
-              I gained valuable experience with React, Spring, Postgresql, Docker, UX, and many more technologies. Below is a picture with the interns!
+              I had a great time working with Leidos in the summer of 2023! During my time as a Software Engineering intern, I was encouraged to dive head-first into a variety of tasks that allowed me to greatly develop my technical skillset. In particular,
+              I gained valuable experience with React, Spring, Postgresql, Docker, UX design, and many more technologies/areas.
             </p>
           </Job>
-          <Job img="./saltech.webp" id="job3" companyName="Saltech Systems" jobTitle="Web Development Intern" duration="October 2023 - Present" location="Ames, Iowa" int="./saltech.webp">
+          <Job img="./saltech.webp" id="job3" companyName="Saltech Systems" jobTitle="Web Development Intern" duration="October 2023 - April 2024" location="Ames, Iowa" int="./saltechint.webp">
             <p className="mb-2">
-              I am currently a Web Development intern at Saltech Systems! My work mainly concerns developing applications with Adobe Cold Fusion and Flutter for a variety of clients.
+              During my time at Saltech Systems, I built a number of web and mobile applications with a large set of different technologies (Flutter, Ruby, ColdFusion to name a few). I worked directly with Saltech clients to gather project requirements and implement features in a faced paced environment.
+              I loved the challenge of diving head-first into this role and learned a lot!
             </p>
           </Job>
           <Job img="./generalmills.webp" id="job4" companyName="General Mills" jobTitle="Digital & Technology Intern" duration="TBD" location="TBD" int="./accepted.webp">
@@ -144,7 +147,7 @@ export default function App() {
           <Project projName="Duck Chat" int ="/ducktalk_wide.webp" img="/ducktalk.webp" id="proj17" techs="Three.JS, GLSL (Shaders), Javascript">
             <p>
               This was made in preparation for a hackathon, I wanted to learn more about OpenGL and GLSL shaders so I made this simple website. The scene is rendered with Three.JS, and the models are not original unfortunately (from <a className="text-blue-300 hover:text-blue-500" href="https://www.models-resource.com/" target="_blank">this website</a>).
-              You can type some text into the input box and the duck will talk back to you in intervals of quacks based on the syllables in a word (Banjo Kazooie style). Nothing too crazy, but thought it was a funny project so I'm putting it here.
+              You can type some text into the input box and the duck will talk back to you in intervals of quacks based on the syllables in a word (Banjo Kazooie style).
             </p>
           </Project>
           <Project projName="CHIP-8 Emulator" int="/chip8.webp" img="/chip8logo.webp" id="proj18" techs="Rust, Emulation">
