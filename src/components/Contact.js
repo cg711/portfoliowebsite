@@ -125,6 +125,7 @@ export default function Contact() {
                         border-2
                         border-blue-500
                         hover:text-white
+                        cursor-pointer
                         mt-4"/>
                         )}
                     </div>
