@@ -25,7 +25,7 @@ export default function Contact() {
             " id="contact">
                 <form ref={form} onSubmit={sendEmail} className="mt-8 space-y-6">
                     <div className="flex flex-col justify-center items-center">
-                        <h1 className="mb-5 text-4xl text-gray-900">Contact me!</h1>
+                        <h1 className="mb-5 text-4xl text-gray-900">Contact me</h1>
                         <label htmlFor="name" className="text-xl text-gray-900">
                             Name
                         </label>

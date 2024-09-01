@@ -14,7 +14,6 @@ export default function App() {
       <NavBar />
       <div className="relative">
         <Hero />
-        <Languages />
         <JobTree>
           <Job
             img="./siback.webp"
@@ -88,6 +87,7 @@ export default function App() {
             </p>
           </Job>
         </JobTree>
+        <Languages />
         <ProjectTree>
           <Project
             projName="OpenCV Vaccum Tracker"

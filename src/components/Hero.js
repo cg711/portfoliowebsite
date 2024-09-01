@@ -2,8 +2,6 @@ import { Picture } from './Picture';
 import { Canvas } from '@react-three/fiber';
 import Resume from './Resume';
 import { motion } from 'framer-motion';
-import { Suspense } from 'react';
-import { Html, Svg } from '@react-three/drei';
 
 export default function Hero() {
 
