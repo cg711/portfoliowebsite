@@ -29,7 +29,8 @@ export default function Hero() {
       <div className="flex flex-col items-center ">
         <div className="max-w-2xl min-w-xl text-center text-white text-2xl mx-8 mb-2">
           <h1>Hi! I'm Casey.</h1>
-          <p>I'm a Junior in Computer Engineering at Iowa State Univeristy, and I love new challenges.</p>
+          <p>Senior in Computer Engineering at Iowa State University</p>
+          <p>Incoming D&T Associate at General Mills</p>
         </div>
         <Resume/>
         <div className="flex flex-row justify-center w-full mt-4 mb-8">

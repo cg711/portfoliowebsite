@@ -10,7 +10,7 @@ import { Languages } from './components/Languages';
 
 export default function App() {
   return (
-    <div className="font-jose scroll-smooth scroll-py-1">
+    <div className="font-jose scroll-smooth scroll-mt-2">
       <NavBar/>
       <div className="relative">
         <Hero/>
@@ -33,7 +33,7 @@ I immensely value the perspective I gained working with Solar Informatics. Worki
               I loved the challenge of diving head-first into this role and learned a lot!
             </p>
           </Job>
-          <Job img="./generalmills.webp" id="job4" companyName="General Mills" jobTitle="Digital & Technology Intern" duration="TBD" location="TBD" int="./accepted.webp">
+          <Job img="./generalmills.webp" id="job4" companyName="General Mills" jobTitle="Digital & Technology Intern" duration="May 2024 - July 2024" location="Minneapolis, Minnesota" int="./accepted.webp">
             <p className="mb-2">
               I am looking forward to working with General Mills for the upcoming summer as a Digital & Technology Intern!
             </p>

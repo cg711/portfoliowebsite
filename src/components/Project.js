@@ -1,5 +1,6 @@
 
 export default function Project(props) {
+
   return (
     <div className="fixed z-10 overflow-y-auto blow-up flex justify-evenly items-center max-h-fit w-9/12 flex-col lg:flex-row gap-11">
       <div className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg min-w-sm">
