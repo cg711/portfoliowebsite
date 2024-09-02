@@ -52,11 +52,11 @@ export const Languages = () => {
                     <p>Intermediate</p>
                     <p>Expert</p>
                 </div>
-                <div className="h-6 w-full bg-gradient-to-r from-blue-950 to-blue-600 shadow-md mb-12"></div>
+                <div className="h-6 w-full bg-gradient-to-r from-green-600 to-blue-600 shadow-md mb-12"></div>
             </div>
             <div className="flex flex-row max-w-3xl flex-wrap justify-center sm:max-w-sm md:max-w-3xl">
                 {myTechs.map((tech, index) => (
-                    <motion.p whileHover={{scale: 1.1}} key={tech[0]} className={`text-white shadow-sm p-3 rounded-full m-2`} style={{backgroundColor: `rgb(0,0,${255 * tech[1]})`}}>{tech[0]}</motion.p>
+                    <motion.p whileHover={{scale: 1.1}} key={tech[0]} className={`text-white shadow-sm p-3 rounded-full m-2`} style={{backgroundColor: `rgb(0,${255 * (1 - tech[1])},${255 * tech[1]})`}}>{tech[0]}</motion.p>
                 ))}
             </div>
         </div>
