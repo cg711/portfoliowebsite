@@ -9,6 +9,7 @@ export default function JobTree(props) {
         let allJobs = document.querySelectorAll('#job');
         allJobs.forEach((item) => item.classList.add("hidden"));
         allJobs[currentJob].classList.toggle("hidden");
+
     },[currentJob]);
 
 
@@ -27,7 +28,7 @@ export default function JobTree(props) {
                     {Children.map(childArray, child => {
                         return ( 
                             <div>
-                                <div id='job' className="flex flex-col items-center max-w-md hidden">
+                                <div id='job' className="max-w-md flex items-center flex-col">
                                     <motion.button whileHover={{scale: 1.1}} className="hover:brightness-125
                                     px-6 rounded-2xl shadow-outline
                                     bg-gradient-to-br from-green-300 via-blue-500 to-purple-600
@@ -39,6 +40,7 @@ export default function JobTree(props) {
                                     }}>
                                         <img className="my-4" src={child.props.img} alt='...'/>
                                         <div className="p-2">
+                                            <p className="text-white font-bold text-lg">{child.props.jobTitle}</p>
                                             <p className="text-white">{child.props.duration}</p>
                                             <p className="text-white">{child.props.location}</p>
                                         </div>
