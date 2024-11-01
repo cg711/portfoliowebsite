@@ -35,6 +35,8 @@ export default function ProjectTree(props) {
                                     temp.classList.toggle("hidden");
                                 }}>
                                     <img className="object-contain w-48 h-28" src={child.props.img} alt='...'/>
+                                    {/* <h1 className="rounded-2xl bg-white shadow-sm p-2 absolute -translate-x-1/4">{child.props.projName}</h1> */}
+
                                 </motion.button>
                             </div>
                             <div className="relative z-50 hidden max-w-full" id={`${child.props.id}`} aria-labelledby="modal-title" role="dialog" aria-modal="true">

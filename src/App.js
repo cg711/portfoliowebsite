@@ -371,6 +371,24 @@ export default function App() {
               emulation of pong!
             </p>
           </Project>
+          <Project
+            projName="Softball Pitch Detector (Senior Design Project)"
+            int="/softballint.webp"
+            img="/softball.webp"
+            id="proj19"
+            techs="C++, Flutter, OpenCV"
+          >
+            <p>
+              For my senior design project at Iowa State University, I was tasked with creating an
+              application capable of detecting the height of a softball during play to alert batters
+              of the legality of a pitch. I wore many hats during the creation of
+              this project: I managed much of the Flutter app developent, I prototyped and researched various
+              object detection systems with OpenCV (as pictured), and I was responsible for client outreach in
+              acquiring specific project requirements. For more information on the project, including repository access,
+              reports, and other documents, please visit our team webpage <a className="text-blue-300 hover:text-blue-500"
+ href="https://sdmay25-11.sd.ece.iastate.edu/" target="_blank">Here!</a>
+            </p>
+          </Project>
         </ProjectTree>
         <Contact />
         <Footer />
