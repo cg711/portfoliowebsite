@@ -12,7 +12,7 @@ export default function Project(props) {
                   <h2 className="my-2 text-gray-400 text-sm text-center">
                     Technologies: {props.techs}
                   </h2>
-                  <div className="text-center my-2">{props.children}</div>
+                  <div className="text-center my-2 flex flex-col items-center gap-4">{props.children}</div>
                 </div>
               </div>
             </div>

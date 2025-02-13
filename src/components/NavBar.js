@@ -19,7 +19,6 @@ export default function NavBar() {
           <motion.a whileHover={{scale: 1.1}} href="#contact" className="py-5">Contact</motion.a>
         </div>
         <div className="md:hidden flex items-center py-5 justify-end">
-            {/* mobile button here */}
             <button onClick={toggleVisible}>
               {((burgerToggle) ? (
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">

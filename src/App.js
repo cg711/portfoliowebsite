@@ -5,8 +5,8 @@ import Contact from "./components/Contact";
 import JobTree from "./components/JobTree";
 import ProjectTree from "./components/ProjectTree";
 import Project from "./components/Project";
-import Footer from "./components/Footer";
 import { Languages } from "./components/Languages";
+import { GithubLink } from "./components/GithubLink";
 
 export default function App() {
   return (
@@ -89,36 +89,6 @@ export default function App() {
         </JobTree>
         <Languages />
         <ProjectTree>
-          <Project
-            projName="OpenCV Vaccum Tracker"
-            id="proj1"
-            img="/opencvlogo.webp"
-            techs="OpenCV, Python"
-            int="/vc.webp"
-          >
-            <p>
-              This was a project I helped create for a family member for a
-              project they had. It simply tracks a robot vaccum around an
-              enclosed space, measuring its orientation and distance traveled.
-              This was a great project to learn more about OpenCV!
-            </p>
-          </Project>
-          <Project
-            projName="Ring Doorbell Clone"
-            id="proj2"
-            img="/pirmotionsensor.webp"
-            techs="Raspberry Pi, Python"
-            int="/pirpic.webp"
-          >
-            <p>
-              This was my first project that combined hardware and software
-              concepts together. The Raspberry Pi is connected to a PIR motion
-              detector which, when motion was sensed, would send a text to my
-              phone via a service called Twilio and record video via a camera
-              periphial connected to the Pi. Overall, it was a very fun project,
-              and you can see the whole (admittedly rough) setup below!
-            </p>
-          </Project>
           <Project
             projName="Healing Haiti"
             id="proj3"
@@ -210,6 +180,7 @@ export default function App() {
               Tailwindcss (and some minimal custom CSS) for styling, and React.
               I hope you like it!
             </p>
+            <GithubLink url="https://github.com/cg711/portfoliowebsite"/>
           </Project>
           <Project
             projName="Pong Clone"
@@ -269,6 +240,7 @@ export default function App() {
               get to play whatever game you get and rate it good or bad. This
               one's fun to mess around with and see what random stuff comes up.
             </p>
+            <GithubLink url="https://github.com/cg711/scratch-roulette"/>
           </Project>
           <Project
             projName="Playmate"
@@ -284,6 +256,7 @@ export default function App() {
               other gameplay types such as tournament play. To the side is a
               picture of the apps dashboard.
             </p>
+            <GithubLink url="https://github.com/cg711/playdate"/>
           </Project>
           <Project
             projName="Handwriting Detector"
@@ -299,6 +272,7 @@ export default function App() {
               was detected and if it matched a specific word (top left of
               picture below).
             </p>
+            <GithubLink url="https://github.com/cg711/handwriting_fixer"/>
           </Project>
           <Project
             projName="FPGA Vault System"
@@ -355,6 +329,7 @@ export default function App() {
               talk back to you in intervals of quacks based on the syllables in
               a word (Banjo Kazooie style).
             </p>
+            <GithubLink url="https://github.com/cg711/water_shader_experiment"/>
           </Project>
           <Project
             projName="CHIP-8 Emulator"
@@ -370,6 +345,7 @@ export default function App() {
               working with emulators at the lowest level. On the right is an
               emulation of pong!
             </p>
+            <GithubLink url="https://github.com/cg711/rust_chip8"/>
           </Project>
           <Project
             projName="Softball Pitch Detector (Senior Design Project)"
@@ -379,19 +355,41 @@ export default function App() {
             techs="C++, Flutter, OpenCV"
           >
             <p>
-              For my senior design project at Iowa State University, I was tasked with creating an
-              application capable of detecting the height of a softball during play to alert batters
-              of the legality of a pitch. I wore many hats during the creation of
-              this project: I managed much of the Flutter app developent, I prototyped and researched various
-              object detection systems with OpenCV (as pictured), and I was responsible for client outreach in
-              acquiring specific project requirements. For more information on the project, including repository access,
-              reports, and other documents, please visit our team webpage <a className="text-blue-300 hover:text-blue-500"
- href="https://sdmay25-11.sd.ece.iastate.edu/" target="_blank">Here!</a>
+              For my senior design project at Iowa State University, I was
+              tasked with creating an application capable of detecting the
+              height of a softball during play to alert batters of the legality
+              of a pitch. I wore many hats during the creation of this project:
+              I managed much of the Flutter app developent, I prototyped and
+              researched various object detection systems with OpenCV (as
+              pictured), and I was responsible for client outreach in acquiring
+              specific project requirements. For more information on the
+              project, including repository access, reports, and other
+              documents, please visit our team webpage{" "}
+              <a
+                className="text-blue-300 hover:text-blue-500"
+                href="https://sdmay25-11.sd.ece.iastate.edu/"
+                target="_blank"
+              >
+                Here!
+              </a>
             </p>
+          </Project>
+          <Project
+            projName="Custom Raytracer"
+            int="/the_art_of_the_craft.webp"
+            img="raytracer.webp"
+            id="proj20"
+            techs="C++"
+          >
+            I built a raytracer in C++! This was a fun project to learn about
+            computer generated graphics. It includes features such as sphere/tri
+            intersections, materials, texturing, a functional camera, among many
+            other features. To the right is a high quality render of a scene I'm
+            calling "The Art of the Craft".
+            <GithubLink url="https://github.com/cg711/raytracer"/>
           </Project>
         </ProjectTree>
         <Contact />
-        <Footer />
       </div>
     </div>
   );

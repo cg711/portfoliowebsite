@@ -38,3 +38,16 @@
     -webkit-user-drag: none;
     user-select: none;
 }
+
+.svg-button {
+    filter: brightness(0) saturate(100%) invert(53%) sepia(36%) saturate(7027%) hue-rotate(202deg) brightness(99%) contrast(96%);
+    transition: filter 0.150s ease-in-out;
+}
+
+a:hover .svg-button {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(6%) saturate(25%) hue-rotate(271deg) brightness(105%) contrast(100%);
+}
+
+button:hover .svg-button {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(6%) saturate(25%) hue-rotate(271deg) brightness(105%) contrast(100%);
+}

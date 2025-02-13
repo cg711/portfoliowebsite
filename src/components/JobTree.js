@@ -20,7 +20,7 @@ export default function JobTree(props) {
             <p className="text-gray-900 mb-8">(Click for more info!)</p>
             <div className="flex items-center justify-around mx-2">
                 <button className="border-blue-500 border-4 rounded-full h-min p-2 text-blue-500 bg-transparent transition-colors duration-150 hover:bg-blue-500 shadow-md" onClick={() => setCurrentJob((currentJob === 0) ? childArray.length - 1 : currentJob - 1)}>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="size-6 text-blue-500 hover:text-white" style={{width: "50px"}}>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="size-6 svg-button" style={{width: "50px"}}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
                     </svg>
                 </button>
@@ -56,7 +56,7 @@ export default function JobTree(props) {
                     })}
                 </div>
                 <button className="border-blue-500 border-4 rounded-full h-min p-2 shadow-md bg-transparent text-blue-500 transition-colors duration-150 hover:bg-blue-500" onClick={() => setCurrentJob((currentJob + 1) % 4)}>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="size-6 text-blue-500 hover:text-white" style={{transform: "rotate(180deg)", width: "50px"}}>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="size-6 svg-button" style={{transform: "rotate(180deg)", width: "50px"}}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
                     </svg>
                 </button>
@@ -64,6 +64,3 @@ export default function JobTree(props) {
         </div>
     );
 }
-// h-10 px-5 text-gray-100 bg-indigo-700 rounded-2xl transition-colors duration-150
-//focus:shadow-outline
-//hover:bg-indigo-800

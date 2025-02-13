@@ -14,9 +14,7 @@ export default function Hero() {
       bg-gradient-to-br from-green-300 via-blue-500 to-purple-600
       h-max py-5
     ">
-      
-      {/* three.js portfolio model m-auto*/}
-      <div className="h-screen w-full -mb-32 pic-container relative">
+            <div className="h-screen w-full -mb-32 pic-container relative">
           <Canvas>
             <ambientLight intensity={1}/>
             <spotLight intensity={0.5} position={[0,0.5,1.5]}/>
